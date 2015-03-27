@@ -179,9 +179,9 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "2.2.2",
+        version: "x.x.x",
         status: false,
-        name: "basicBot",
+        name: "Manage-O-Tron",
         loggedInID: null,
         scriptLink: "https://rawgit.com/FlaminTNT/basicBot/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
@@ -194,11 +194,11 @@
             botName: "basicBot",
             language: "english",
             chatLink: "https://rawgit.com/FlaminTNT/basicBot/master/lang/en.json",
-            startupCap: 1, // 1-200
-            startupVolume: 0, // 0-100
-            startupEmoji: false, // true or false
+            startupCap: 200, // 1-200
+            startupVolume: 50, // 0-100
+            startupEmoji: true, // true or false
             maximumAfk: 120,
-            afkRemoval: true,
+            afkRemoval: false,
             maximumDc: 60,
             bouncerPlus: true,
             blacklistEnabled: true,
@@ -211,11 +211,11 @@
             voteSkipLimit: 10,
             historySkip: false,
             timeGuard: true,
-            maximumSongLength: 10,
+            maximumSongLength: 6,
             autodisable: true,
-            commandCooldown: 30,
+            commandCooldown: 10,
             usercommandsEnabled: true,
-            lockskipPosition: 3,
+            lockskipPosition: 5,
             lockskipReasons: [
                 ["theme", "This song does not fit the room theme. "],
                 ["op", "This song is on the OP list. "],
@@ -224,6 +224,7 @@
                 ["sound", "The song you played had bad sound quality or no sound. "],
                 ["nsfw", "The song you contained was NSFW (image or sound). "],
                 ["unavailable", "The song you played was not available for some users. "]
+                ["boo", "The song wasn't appreciated by the audience."]
             ],
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
